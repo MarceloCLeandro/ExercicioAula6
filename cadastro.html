@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+	<title>.: Site Exemplo :.</title>
+	<link href="estilos/estilo.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<main id="conteudo">
+		<!-- Cabeçalho -->
+		<header>
+			<span>Site Exemplo</span> <br/>
+			<span>Aplicações para Internet</span>
+		</header>
+		
+		<!-- Menu -->		
+		<nav>
+			<ul id="menu">
+				<li><a href="index.html" title="Página Inicial">Home</a></li>
+				<li><a href="biografia.html" title="Biografia">Biografia</a></li>
+				<li><a href="fotos.html" title="Fotos">Fotos</a></li>
+				<li><a href="cadastro.html" title="Cadastro">Cadastro</a></li>
+			</ul>	
+		</nav>
+		
+		<section id="containerConteudo">
+			<form action="mailto:eu@gmail.com" method="post">
+			
+				<input type="hidden" id="identificador" name="identificador" value="67" />
+			
+				<fieldset>
+					<legend>Cadastro</legend>
+					<label for="nome">Nome:</label>
+					<input type="text" name="Nome" id="nome" />
+					<br />
+					
+					<label for="sobrenome">Sobrenome:</label>
+					<input type="text" name="sobrenome" id="sobrenome" />
+					
+					<br />
+					<label for="dataNascimento">Data Nasc:</label>
+					<input type="text" name="dataNascimento" id="dataNascimento" />
+
+					<br />
+					<label for="senha">Senha:</label>			
+					<input type="password" name="senha" id="senha" />
+					
+					<br />
+					<label for="sexo">Sexo:</label>
+					<input type="radio" name="sexo" value="F" id="sexoFeminino" /><label for="sexoFeminino">Feminino</label>
+					<input type="radio" name="sexo" value="M" id="sexoMasculino" /><label for="sexoMasculino">Masculino</label>
+
+					<br />
+					<label for="contato">Contato:</label>
+					<input type="checkbox" name="telefone" id="telefone" /><label for="telefone">Telefone</label>
+					<input type="checkbox" name="email" id="email" /><label for="email">E-mail</label>
+					
+					<br />
+					<label for="foto">Foto:</label>
+					<input type="file" name="foto" id="foto" />	
+
+					<br />
+					<label for="descricaoArquivo">Descrição:</label>
+					<textarea name="descricaoArquivo" cols="60" rows="2" id="descricaoArquivo"></textarea>
+					
+					<br />
+					<label for="interesse">Interesse:</label>
+					<select name="interesse" id="interesse">
+						<option value="gastronomia">Gastronomia</option>
+						<option value="arte">Arte</option>
+						<option value="todas">Todas</option>
+					</select>
+
+					<br />			
+					<input name="btnEnvio" type="submit" value="Enviar" />			
+					
+					<!-- Código para dar espaço entre os elementos -->
+					&nbsp;			
+					<input name="btnReset" type="reset" value="Limpar" />
+					
+				</fieldset>
+			</form>
+		</section>
+
+		<!-- Rodapé -->
+		<footer>
+			Copyright © 2020 Blog. All Rights Reserved
+		</footer>
+	</main>
+</body>
+
+</html>
