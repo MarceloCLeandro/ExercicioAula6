@@ -1,0 +1,55 @@
+﻿* {font-family: GillSans}
+h1, h2, h3, h4, h5, h6 {color:#0000FF; font-weight:normal}
+
+.trechoMusical {text-align:center; line-height:40px}
+
+#menu { background-color: #00B2C8; list-style-type: none; }
+#menu a { color: #FFFFFF }
+#menu a:hover{color:#FFCC00;}
+
+#menu li { display: inline}
+
+body
+{
+	background:url('../imagens/fundoSite.jpg') no-repeat;
+}
+
+header {
+	color:#FFFFFF; font-size: large;
+	padding: 3px 0 0 50px;
+}
+
+#menu { padding: 0px 0px 0px 5px; }
+
+#conteudo
+{
+    margin: 0 auto;
+    width: 960px
+}
+
+/* ANTES DA CONVERSÃO PARA FIGURE */
+/* div.thumb { border: 1px dashed black; margin:10px; float:left} */
+/* div.thumb span { display: block; text-align:center; } */
+/* div.thumb img { height:200px; } */
+
+/* DEPOIS DA CONVERSÃO PARA FIGURE */
+figure.thumb { border: 1px dashed black; margin:10px; float:left } 
+figure.thumb figcaption { display: block; text-align:center; } 
+figure.thumb img { height:200px; } 
+
+img { box-shadow: 5px 5px 10px grey;} 
+
+input[type="text"] { margin-bottom: 10px }
+
+input[name^="btn"] {margin-top: 10px; color: rgb(0,0,255) }
+
+
+.demaisFotos {
+	overflow: auto;
+    width: 80%;
+    height: 400px;
+}
+
+nav { float: left;  width: 100px; }
+#containerConteudo { float: left; width: 800px; margin-left:5px; margin-top: 10px}
+footer { clear:both; }
